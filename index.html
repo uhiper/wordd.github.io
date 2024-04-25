@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelime Tahmin Oyunu</title>
+<link rel="stylesheet" href="oyun3.css">
+</head>
+<body>
+
+<div id="game">
+    <h2 id="description">Kelimenin harf sayısı: </h2>
+    <div id="wordContainer"></div>
+    <p id="hint">İpucu: </p>
+    <p id="remaining">Kalan harf alma hakkın: 3</p>
+    <button onclick="revealLetter()">Harf Aç</button>
+    <button id="guessButton" onclick="guessWord()">Kelimeyi Tahmin Et</button>
+
+    <button onclick="usePass()">Pas</button>
+    <input type="text" id="guessInput" placeholder="Kelimeyi Tahmin Et">
+    <p id="result"></p>
+</div>
+
+<script src="oyun3.js"></script>
+</body>
+</html>

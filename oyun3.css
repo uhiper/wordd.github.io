@@ -1,0 +1,86 @@
+/* Genel stiller */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e6ecee, #ff0000);
+    overflow: hidden;
+}
+
+/* Düğme stilleri */
+#guessButton, button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#guessButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+    background-color: #ff6961;
+    color: #fff;
+}
+
+#guessButton:hover, button:hover {
+    background-color: #45a049;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* Oyun stil */
+#game {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    max-width: 80%;
+}
+
+#description {
+    margin-top: 0;
+}
+
+#hint {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#wordContainer {
+    margin-top: 20px;
+}
+
+.letter-box {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+#remaining {
+    margin-top: 20px;
+}
+
+#guessInput {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+/* Mobil ekran boyutları için */
+@media only screen and (max-width: 600px) {
+    #game {
+        max-width: 90%; /* Daha dar bir oyun alanı */
+    }
+}
